@@ -21,10 +21,13 @@ group :development do
   gem 'quiet_assets'
   gem 'rails_layout'
 end
-group :development, :test do
-  gem 'sqlite3'
-end
+
+gem 'pg'
+
 group :production do
-  gem 'pg'
   gem 'rails_12factor'
 end
+
+gem 'rspotify'
+gem 'select2-rails'
+gem 'simple_form'

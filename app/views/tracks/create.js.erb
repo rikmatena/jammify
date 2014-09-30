@@ -1,0 +1,4 @@
+$('#save-cta').html('<%= escape_javascript (render partial: "visitors/form") %>');
+$('#save-cta').toggleClass('hide');
+$('#selected-song').html("Added. Pick another song.");
+$('.tracks').html('<%= escape_javascript (render partial: "visitors/list") %>');

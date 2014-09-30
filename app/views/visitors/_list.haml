@@ -1,0 +1,7 @@
+- @tracks.each do |track|
+  .track
+    .name
+      = track.name
+    .widget
+      %iframe{allowtransparency: "true", frameborder: "0", height: "80px", src: "https://embed.spotify.com/?uri=" + track.uri, width: "100%"}
+

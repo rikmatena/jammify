@@ -1,0 +1,4 @@
+= simple_form_for(Track.new, remote: true) do |f|
+  = f.input :name, as: :hidden, input_html: { value: "rik" }
+  = f.input :uri, as: :hidden, input_html: { value: "pik" }
+  = f.button :submit, "Save track", class: 'btn btn-default btn-success'
